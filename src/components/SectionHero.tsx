@@ -52,7 +52,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 sm:-m-1 m-4 cursor-pointer ${ activeLink === '#Inicio'  ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
+                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${ activeLink === '#Inicio'  ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
                     onClick={() => handleClick('#Inicio')}
                   >
                     Inicio
@@ -65,7 +65,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500} 
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 sm:-m-1 m-4 cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 sm:-m-1 text-white ' : 'text-black'}`}
+                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 sm:-m-1 text-white ' : 'text-black'}`}
                     onClick={() => handleClick('#Nosotros')}
                   >
                     Nosotros
@@ -78,7 +78,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 sm:-m-1 m-4 cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
+                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
                     onClick={() => handleClick('#Servicios')}
                   >
                     Servicios
@@ -126,7 +126,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 cursor-pointer ${activeLink === '#Inicio' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Inicio' ? 'bg-indigo-400 text-white' : 'text-black'}`}
               onClick={() => handleClick('#Inicio')}
             >
               Inicio
@@ -139,7 +139,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 text-white' : 'text-black'}`}
               onClick={() => handleClick('#Nosotros')}
             >
               Nosotros
@@ -152,7 +152,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 text-white' : 'text-black'}`}
               onClick={() => handleClick('#Servicios')}
             >
               Servicios
@@ -179,7 +179,7 @@ export default function SectionHero() {
         className="w-full h-auto overflow-hidden bg-gradient-to-t from-[#FFFFFF] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 pb-36" id="Inicio"
       >
         <div className="lg:w-1/2 lg:h-auto max-md:mt-64 md:mt-56 text-center lg:ml-12 lg:mr-2 lg:px-10 lg:text-left ">
-          <h3 className=" text-indigo-800 md:mt-36 mb-4 font-semibold  text-base md:text-xl font-quicksand tracking-widest"> Somos una </h3>
+          <h3 className=" text-indigo-800 md:mt-36 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest"> Somos una </h3>
           <TypingTitle />
           <p className="font-quicksand text-white  py-2 font-normal  text-xs max-sm:px-4 md:text-2xl leading-9 tracking-widest">
             Potenciamos el crecimiento digital con <br/> 
