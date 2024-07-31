@@ -1,15 +1,9 @@
-
-
-import './App.css'
+import SectionHero from './components/SectionHero'
 
 function App() {
-  
-
   return (
     <>
-      <h1 className="text-3xl font-bold underline text-gray-600">
-        Wallock con React Typescript Tailwind
-      </h1>
+      <SectionHero />     
     </>
   )
 }
