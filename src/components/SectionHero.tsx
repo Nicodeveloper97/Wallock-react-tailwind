@@ -21,9 +21,9 @@ export default function SectionHero() {
 
   return (
     <>
-      <header className="fixed w-full h-40 lg:h-28 grid grid-rows bg-[#FAFAFF] border-b-2 border-b-[#777FFF]">
+      <header className="fixed w-full h-40 lg:h-28 grid grid-rows bg-[#F2F2F7] border-b-2 border-b-[#777FFF]">
 
-        <nav className="fixed w-full sm:h-28 md:h-24 lg:h-20 top-4 flex md:flex-col lg:flex-row lg:justify-between">
+        <nav className="fixed w-full sm:h-28 md:h-24 lg:h-20 top-4 flex md:flex-col lg:flex-row lg:justify-between bg-[#F2F2F7]">
             
             <a 
               href="/index.html" 
@@ -194,7 +194,7 @@ export default function SectionHero() {
       <SectionNosotros/>
       <SectionServices/>
       <SectionHablemos/>
-     
+    
     </>
   )
 }

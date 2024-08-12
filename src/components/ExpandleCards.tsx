@@ -39,7 +39,6 @@ export default function ExpandleCards({service}: ExpandleCardsProps) {
           {isExpanded && 
         
           <p className="w-4/5 text-center text-gray-600  m-auto pb-10 sm:pb-4 max-sm:text-xs">{service.servicio}</p>
-       
         }
       </article>
       
