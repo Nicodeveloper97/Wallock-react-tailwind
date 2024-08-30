@@ -97,7 +97,7 @@ export default function SectionNosotros () {
                     <div
                     key={service.name}
                     className="card bg-[#FFFFFF] font-quicksand text-center group space-y-3 sm:space-y-6 p-4 sm:py-4 w-3/5  h-full border border-[#555FFF]">
-                      <div className="grid place-items-center text-indigo-800">{service.icon}</div>
+                        <div className="grid place-items-center text-indigo-800">{service.icon}</div>
                         <h1 className="text-black-800 ">{service.name}</h1>
                         <p className="text-slate-500">{service.description}</p>
                     </div>
