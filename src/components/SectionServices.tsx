@@ -12,7 +12,7 @@ export default function SectionServices() {
   return (
     <>
     <section 
-      className="bg-[#FFFFFF] p-10"
+      className="bg-[#F2F2F7] p-10"
       id="Servicios"
     >
 
@@ -29,7 +29,6 @@ export default function SectionServices() {
           service={service}
         />
       ))}
-     
           
     </section>
     </>
