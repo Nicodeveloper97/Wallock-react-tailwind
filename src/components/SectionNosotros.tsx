@@ -126,9 +126,3 @@ export default function SectionNosotros () {
     </div>
     </section>
 </>)}
-
-
-    </div>
-    </section>
-</>)}
-
