@@ -71,18 +71,33 @@ export default function SectionNosotros () {
         Que podemos ofrecerte?
         </h3>
     <div className="flex flex-wrap justify-center gap-2">
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Sistemas internos </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Consultorias </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Integraciones </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> E-commerce </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Websites </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Apps Nativas </h1>
-      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> Web Apps </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> 
+        Sistemas internos 
+      </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white">
+        Consultorias 
+        </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white">
+        Integraciones 
+        </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white">
+        E-commerce 
+        </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> 
+        Websites 
+        </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> 
+        Apps Nativas 
+        </h1>
+      <h1 className="px-7 rounded-2x1 p-2 mx-2 bg-[#FFFFFF] border border-[#555FFF] hover:bg-indigo-600 hover:text-white"> 
+        Web Apps 
+        </h1>
     </div>
     </section>
+
     <section className="w-full bg-[#F2F2F7]">
     <div className="">
-        <div className='container bg-[#F2F2F7]'>
+        <div className='container bg-[#F2F2F7] pt-40'>
             <div className='bg-[#F2F2F7]'>
             <h3 className="font-quicksand text-indigo-800 text-center font-semibold text-xl py-2">
             Nos diferenciamos
@@ -91,7 +106,8 @@ export default function SectionNosotros () {
             Por nuestros valores
         </h2>
             </div>
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center'>
+            <div className="min-h-screen flex items-center justify-center">    
+        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 place-items-center p-10 pb-40 pl-16'>
             {
                 skillData.map((service) => (
                     <div
@@ -103,7 +119,8 @@ export default function SectionNosotros () {
                     </div>
                 ))
             }
-        </div>  
+        </div> 
+        </div> 
         </div>
     
     </div>

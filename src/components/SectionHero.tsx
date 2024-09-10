@@ -6,6 +6,10 @@ import SectionServices from "./SectionServices";
 import { Link } from "react-scroll";
 import SectionHablemos from "./SectionHablemos";
 import SectionNosotros from "./SectionNosotros";
+//import imagenes //
+import celu from "../assets/celus.png"
+import hamburicon from "../assets/hamburguer-icon.svg"
+
 
 export default function SectionHero() {
 
@@ -37,7 +41,7 @@ export default function SectionHero() {
               onClick={() => setMenuOpen(!menuOpen)}
             >
               <img 
-              src="/public/img/hamburguer-icon.svg" 
+              src= {hamburicon}
               alt="Menú" />
           </button>
             
@@ -188,7 +192,7 @@ export default function SectionHero() {
           </p>
         </div>
         <div className="max-sm:-mt-16 lg:mt-32 px-4 py-20 ml-2 sm:mx-auto lg:mr-14 w-1/2 h-auto max-md:mx-auto">
-          <img src="../public/img/celus.png" alt="img-hero"/>
+          <img src={celu} alt="img-hero"/>
         </div>
       </section>
       <SectionNosotros/>
