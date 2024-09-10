@@ -1,6 +1,8 @@
 import { useState } from "react"
 import { ServicesType } from "../types"
-
+//import imagenes //
+import iconabrir from "../assets/add-icon+.svg"
+import iconcerrar from "../assets/add-iconx.svg"
 
 type ExpandleCardsProps = {
   service: ServicesType; 
@@ -32,7 +34,7 @@ export default function ExpandleCards({service}: ExpandleCardsProps) {
         >
           <img 
             className=" w-10 sm:w-16 lg:w-full h-auto cursor-pointer" 
-            src={isExpanded ? "/public/img/add-iconx.svg" : "/public/img/add-icon+.svg"} 
+            src={isExpanded ?  iconcerrar : iconabrir }
             alt={isExpanded ? "Cerrar" : "Mas Info"}
             />  
         </button>
