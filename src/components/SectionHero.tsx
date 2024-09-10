@@ -1,3 +1,5 @@
+import { useState } from "react";
+import TypingTitle from "./TypingTitle";
 import SectionServices from "./SectionServices";
 // import SectionNosotros from "./SectionNosotros";
 // import SectionHablemos from "./SectionHablemos";
