@@ -200,7 +200,7 @@ export default function SectionHero() {
       </div>
         
       <section 
-        className="w-full h-auto overflow-hidden bg-gradient-to-t from-[#FFFFFF] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 pb-36" id="Inicio"
+        className="w-full h-auto overflow-hidden bg-gradient-to-t from-[#F2F2F7] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 pb-36" id="Inicio"
       >
         <div className="lg:w-1/2 lg:h-auto max-md:mt-64 md:mt-56 text-center lg:ml-12 lg:mr-2 lg:px-10 lg:text-left ">
           <h3 className=" text-indigo-800 md:mt-36 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest"> Somos una </h3>
