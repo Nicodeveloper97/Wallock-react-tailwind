@@ -1,14 +1,14 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import TypingTitle from "./TypingTitle";
 import SectionServices from "./SectionServices";
 // import SectionNosotros from "./SectionNosotros";
 // import SectionHablemos from "./SectionHablemos";
-import { Link } from "react-scroll";
 import SectionHablemos from "./SectionHablemos";
 import SectionNosotros from "./SectionNosotros";
 //import imagenes //
 import celu from "../assets/celus.png"
 import hamburicon from "../assets/hamburguer-icon.svg"
+import { Link} from 'react-scroll';
 
 
 export default function SectionHero() {
@@ -21,7 +21,27 @@ export default function SectionHero() {
       setMenuOpen(false);
   };
 
+  const handleScroll = () => {
+    const sections = document.querySelectorAll('section');
+    let currentSection = '';
   
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      if (window.scrollY >= sectionTop - 70) {
+        currentSection = section.getAttribute('id')!;
+      }
+    });
+  
+    setActiveLink(`#${currentSection}`);
+  };
+  
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };    
+  }, []);
+
 
   return (
     <>
