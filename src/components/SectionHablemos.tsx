@@ -10,7 +10,7 @@ export default function SectionHablemos() {
         id="Hablemos"
       >
       <section className="w-full h-auto bg-[#F2F2F7] py-8">
-  <div className="shadow-md rounded-lg bg-white px-8 pt-6 pb-8 mx-auto rounded-lg" 
+  <div className=" rounded-lg bg-[#F2F2F7] px-8 pt-6 pb-8 mx-auto rounded-lg" 
     style={{ width: '100%', maxWidth: '1195px', height: 'auto', maxHeight: '722px' }}>
     
     <h2 className="font-quicksand text-indigo-800 text-center font-semibold text-3xl py-2">
