@@ -47,7 +47,7 @@ export default function SectionNosotros() {
           Soluciones innovadoras y un enfoque integral
         </h2>
 
-        <h1 className="w-full font-quicksand text-center text-sm mb-8 text-[#5F5A5A] px-16 max-sm:px-4 sm:text-xl leading-9 tracking-widest">
+        <h1 className="w-full font-quicksand text-center text-sm mb-8 text-gray-700 px-16 max-sm:px-4 sm:text-xl leading-9 tracking-widest">
           Somos un equipo de expertos en tecnología, unidos por el deseo de desarrollar soluciones digitales únicas y efectivas que impulsen el crecimiento de tu negocio. Cada integrante aporta su talento distintivo, esa chispa que nos hace destacar como conjunto. Nos comprometemos a buscar la excelencia en cada proyecto, ofreciendo un acompañamiento responsable, transparente y centrado en el cliente para construir relaciones duraderas y significativas. Queremos ser tu aliado en el mundo digital, impulsando tu negocio con innovación, creatividad y conocimiento técnico. Te invitamos a descubrir la diferencia de trabajar con un equipo que realmente se preocupa por tu éxito. En Wallock, no solo desarrollamos software, creamos relaciones y experiencias que marcan la diferencia. Fusionamos tradición y vanguardia para brindarte soluciones innovadoras y personalizadas. Juntos, podemos convertir tus ideas en realidades y tus desafíos en oportunidades.
         </h1>
       </section>
