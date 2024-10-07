@@ -59,37 +59,37 @@ export default function SectionNosotros() {
 
 
 
-      <section className="w-full bg-[#F2F2F7] pt-12 pb-20 pl-8">
-  <div className="">
-    <div className="container bg-[#F2F2F7]">
-      <div className="bg-[#F2F2F7]">
-        <h3 className="font-quicksand text-indigo-800 text-center font-semibold text-xl py-2">
-          Nos diferenciamos
-        </h3>
-        <h2 className="font-quicksand text-center text-xl mb-8"> 
-          Por nuestros valores
-        </h2>
-      </div>
+<section className="bg-[#F2F2F7] pt-12 pb-8 mb-0 flex flex-col items-center">
+  <div className="container mx-auto max-w-[1440px] px-6">
+    <div className="w-full sm:pl-0">
+      <h2 className="font-quicksand-600 text-indigo-800 sm:px-12 text-left font-semibold text-lg sm:text-xl py-2 md:text-[24px] lg:text-[24px]">Nuestros valores</h2>
+    </div>
 
-      <div className="flex items-start justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 place-items-center p-6"> 
-          {skillData.map((service) => (
-            <div
-              key={service.name}
-              className="card bg-[#FFFFFF] font-quicksand text-center group space-y-2 sm:space-y-4 p-4 sm:py-6 w-11/12 h-full border border-[#555FFF]" 
-            >
-              <div className="flex items-center justify-center space-x-2 text-indigo-800">
-                <div>{service.icon}</div>
-                <h1 className="text-black-800">{service.name}</h1>
-              </div>
-              <p className="text-slate-500">{service.description}</p>
+    <div className="flex justify-center items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 p-4 w-full">
+        {skillData.map((service) => (
+          <div
+            key={service.name}
+            className="bg-white font-quicksand text-center w-full h-auto p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg shadow-lg border border-solid border-[#D5D4DC] opacity-100 hover:shadow-xl"
+          >
+            <div className="flex items-center justify-center mb-4 text-indigo-800">
+              <div className="text-2xl mr-2">{service.icon}</div>
+              <h1 className="text-lg font-semibold text-black">{service.name}</h1>
             </div>
-          ))}
-        </div>
+            <p className="text-slate-500 text-base xl:text-lg">{service.description}</p>
+          </div>
+        ))}
       </div>
     </div>
   </div>
 </section>
+
+
+
+
+
+
+
 
     </>
   );
