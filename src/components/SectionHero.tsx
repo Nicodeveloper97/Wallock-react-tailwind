@@ -29,6 +29,7 @@ export default function SectionHero() {
       const sectionTop = section.offsetTop;
       if (window.scrollY >= sectionTop - 70) {
         currentSection = section.getAttribute('id')!;
+        
       }
     });
   
@@ -41,29 +42,31 @@ export default function SectionHero() {
       window.removeEventListener('scroll', handleScroll);
     };    
   }, []);
-
-
+  
   return (
     <>
-      <header className="fixed w-full h-40 lg:h-28 grid grid-rows bg-[#F2F2F7] border-b-2 border-b-[#777FFF]">
+      <header className="fixed w-full h-12 bg-[#F2F2F7] border-b-2 border-b-[#777FFF]">
 
-        <nav className="fixed w-full sm:h-28 md:h-24 lg:h-20 top-4 flex md:flex-col lg:flex-row lg:justify-between bg-[#F2F2F7]">
+        <nav className="fixed w-full flex justify-between items-center my-1 px-4">
             
             <a 
               href="/index.html" 
-              className="font-quicksand text-4xl font-semibold leading-loose justify-center sm:ml-72 ml-5 mx-auto mb-4 lg:ml-24 text-indigo-500 no-underline cursor-pointer"
+              className="font-quicksand text-xl font-semibold leading-loose text-indigo-500 no-underline cursor-pointer"
             > 
               Wallock 
             </a>
-
+            
+            {}
             <button 
-              className="sm:hidden text-3xl -mt-5 mr-4" 
               onClick={() => setMenuOpen(!menuOpen)}
-            >
-              <img 
-              src= {hamburicon}
-              alt="Menú" />
-          </button>
+              className="sm:hidden"
+            >              
+              <img
+                className="font-black" 
+                src={hamburicon}
+                alt="Menú"
+              />              
+            </button>
             
 
             <ul 
@@ -76,7 +79,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${ activeLink === '#Inicio'  ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
+                    className={`w-5 h-3 cursor-pointer text-black hover:underline hover:underline-offset-4 hover:text-decoration-color-indigo-600 hover:text-gray-500 ${ activeLink === '#Inicio'  ? 'text-gray-500 underline underline-offset-4' : 'text-black'}`}
                     onClick={() => handleClick('#Inicio')}
                   >
                     Inicio
@@ -89,7 +92,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500} 
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 sm:-m-1 text-white ' : 'text-black'}`}
+                    className={`w-5 h-3 cursor-pointer text-black hover:underline hover:underline-offset-4 hover:text-gray-500 ${ activeLink === '#Nosotros' ? 'text-gray-500 underline underline-offset-4' : 'text-black'}`}
                     onClick={() => handleClick('#Nosotros')}
                   >
                     Nosotros
@@ -102,7 +105,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className={`w-5 h-3 p-3 sm:mr-1 rounded-3xl hover:bg-indigo-400 hover:text-white sm:-m-1 m-4 cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 sm:-m-1 text-white' : 'text-black'}`}
+                    className={`w-5 h-3 cursor-pointer text-black hover:underline hover:underline-offset-4 hover:text-gray-500 ${ activeLink === '#Servicios' ? 'text-gray-500 underline underline-offset-4' : 'text-black'}`}
                     onClick={() => handleClick('#Servicios')}
                   >
                     Servicios
@@ -115,7 +118,7 @@ export default function SectionHero() {
                     smooth={true}
                     offset={-70}
                     duration={500}
-                    className="px-3 py-3 rounded-3xl opacity-1 bg-indigo-800 hover:bg-indigo-600 text-white font-poppins text-md text-center cursor-pointer"
+                    className={`px-2 py-2 rounded-3xl opacity-1 text-white font-poppins text-sm text-center cursor-pointer hover:bg-indigo-600 hover:underline hover:underline-offset-4 ${activeLink === '#Hablemos' ? 'bg-indigo-600 underline underline-offset-4' : 'bg-indigo-800'}`}
                     onClick={() => handleClick('#Hablemos')} 
                   >
                     <i className=' bx bx-message-rounded-dots mr-2'></i>
@@ -135,14 +138,14 @@ export default function SectionHero() {
         ></div>
       )}
 
-      <div className={`fixed top-0 right-0 w-56 h-full bg-white shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden z-50`}>
+      <div className={`fixed top-0 right-0 w-full h-full bg-white shadow-lg transform ${menuOpen ? 'translate-x-0' : 'translate-x-full'} transition-transform duration-300 ease-in-out sm:hidden z-50`}>
         <button 
-          className="text-3xl p-4" 
+          className="text-4xl py-1 px-4 float-right" 
           onClick={() => setMenuOpen(false)}
         >
           &times; {/* Icono de cerrar */}
         </button>
-        <ul className="flex flex-col gap-6 items-center font-poppins text-md font-normal no-underline text-gray-900 mt-10">
+        <ul className="flex flex-col gap-6 items-start font-poppins text-md font-normal no-underline text-gray-900 mt-16 ml-4">
           <li>
             <Link
               to="Inicio"
@@ -150,7 +153,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Inicio' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 hover:text-gray-500 hover:underline hover:underline-offset-4 cursor-pointer`}
               onClick={() => handleClick('#Inicio')}
             >
               Inicio
@@ -163,7 +166,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Nosotros' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 hover:text-gray-500 hover:underline hover:underline-offset-4 cursor-pointer`}
               onClick={() => handleClick('#Nosotros')}
             >
               Nosotros
@@ -176,7 +179,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className={`w-full text-center p-3 rounded-3xl hover:bg-indigo-400 hover:text-white cursor-pointer ${activeLink === '#Servicios' ? 'bg-indigo-400 text-white' : 'text-black'}`}
+              className={`w-full text-center p-3 hover:text-gray-500 hover:underline hover:underline-offset-4 cursor-pointer`}
               onClick={() => handleClick('#Servicios')}
             >
               Servicios
@@ -189,7 +192,7 @@ export default function SectionHero() {
               smooth={true}
               offset={-70}
               duration={500}
-              className="w-full text-center px-3 py-3 rounded-3xl bg-indigo-800 hover:bg-indigo-600 text-white cursor-pointer"
+              className={`px-2 py-2 rounded-3xl opacity-1 text-white font-poppins text-sm text-center cursor-pointer bg-indigo-800 hover:bg-indigo-600`}
               onClick={() => handleClick('#Hablemos')}
             >
               <i className='bx bx-message-rounded-dots mr-2'></i>
@@ -200,10 +203,11 @@ export default function SectionHero() {
       </div>
         
       <section 
-        className="w-full h-auto overflow-hidden bg-gradient-to-t from-[#F2F2F7] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 pb-36" id="Inicio"
+        className="w-full bg-gradient-to-t from-[#F2F2F7] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 py-48 lg:py-72"
+        id="Inicio"
       >
-        <div className="lg:w-1/2 lg:h-auto max-md:mt-64 md:mt-56 text-center lg:ml-12 lg:mr-2 lg:px-10 lg:text-left ">
-          <h3 className=" text-indigo-800 md:mt-36 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest"> Somos una </h3>
+        <div className="lg:w-1/2 lg:h-auto text-center lg:ml-12 lg:mr-2 lg:px-10 lg:text-left ">
+          <h3 className=" text-indigo-800 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest"> Somos una </h3>
           <TypingTitle />
           <p className="font-quicksand text-white  py-2 font-normal  text-xs max-sm:px-4 md:text-2xl leading-9 tracking-widest">
             Potenciamos el crecimiento digital con <br/> 
@@ -211,7 +215,7 @@ export default function SectionHero() {
             <span className="font-semibold">impacto empresarial</span>
           </p>
         </div>
-        <div className="max-sm:-mt-16 lg:mt-32 px-4 py-20 ml-2 sm:mx-auto lg:mr-14 w-1/2 h-auto max-md:mx-auto">
+        <div className=" lg:-mt-48 px-4 py-20 mx-auto lg:mr-14 w-1/2 h-auto max-md:mx-auto">
           <img src={celu} alt="img-hero"/>
         </div>
       </section>

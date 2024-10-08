@@ -28,7 +28,7 @@ export default function ExpandleCards({service}: ExpandleCardsProps) {
         </h1>
         <button 
           onClick={handleClick}
-          className={`focus:outline-none float-right w-20 h-20 ${isExpanded ? 'max-sm:-mt-16 -mt-20 -mr-28 max-sm:-mr-8' : '-mt-8 md:-mt-11 -mr-20 sm:-mr-11'}`}
+          className={`focus:outline-none float-right w-20 h-20 ${isExpanded ? '-mt-16 -mr-8 md:-mt-20 md:-mr-28' : '-mt-8 md:-mt-11 -mr-20 sm:-mr-11'}`}
 
           
         >
