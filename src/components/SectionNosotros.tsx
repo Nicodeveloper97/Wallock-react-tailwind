@@ -80,17 +80,9 @@ export default function SectionNosotros() {
           </div>
         ))}
       </div>
+     </div>
     </div>
-  </div>
-</section>
+   </section>
+  </>
+);}
 
-
-
-
-
-
-
-
-    </>
-  );
-}
