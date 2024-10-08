@@ -9,7 +9,7 @@ import SectionNosotros from "./SectionNosotros";
 //import imagenes //
 import celu from "../assets/celus.png"
 import hamburicon from "../assets/hamburguer-icon.svg"
-
+import Slider from "./Slider"
 
 export default function SectionHero() {
 
@@ -45,7 +45,9 @@ export default function SectionHero() {
   
   return (
     <>
-      <header className="fixed w-full h-12 bg-[#F2F2F7] border-b-2 border-b-[#777FFF]">
+
+      <header className="fixed w-full h-12 bg-[#F2F2F7] border-b-2 border-b-[#777FFF] z-50">
+
 
         <nav className="fixed w-full flex justify-between items-center my-1 px-4">
             
@@ -219,8 +221,9 @@ export default function SectionHero() {
           <img src={celu} alt="img-hero"/>
         </div>
       </section>
-      <SectionNosotros/>
+      <Slider/>
       <SectionServices/>
+      <SectionNosotros/>
       <SectionHablemos/>
     
     </>
