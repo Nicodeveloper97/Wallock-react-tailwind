@@ -3,3 +3,8 @@ export type ServicesType = {
   title: string,
   servicio: string
 }
+
+export type ItemProps = {
+  name: HTMLDivElement,
+  icon: HTMLDivElement
+}
