@@ -204,23 +204,40 @@ export default function SectionHero() {
         </ul>
       </div>
         
-      <section 
-        className="w-full bg-gradient-to-t from-[#F2F2F7] to-[#555FFF] lg:flex lg:justify-around bg-cover -z-10 py-48 lg:py-72"
-        id="Inicio"
-      >
-        <div className="lg:w-1/2 lg:h-auto text-center lg:ml-12 lg:mr-2 lg:px-10 lg:text-left ">
-          <h3 className=" text-indigo-800 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest"> Somos una </h3>
-          <TypingTitle />
-          <p className="font-quicksand text-white  py-2 font-normal  text-xs max-sm:px-4 md:text-2xl leading-9 tracking-widest">
-            Potenciamos el crecimiento digital con <br/> 
-            soluciones que aceleran e impulsan el <br/> 
-            <span className="font-semibold">impacto empresarial</span>
-          </p>
-        </div>
-        <div className=" lg:-mt-48 px-4 py-20 mx-auto lg:mr-14 w-1/2 h-auto max-md:mx-auto">
-          <img src={celu} alt="img-hero"/>
-        </div>
-      </section>
+      <section id="Inicio"
+  className="w-full h-auto lg:flex pt-24 lg:pt-56"
+  style={{ 
+    background: 'linear-gradient(to bottom, rgba(67, 97, 238, 0.4) 0%, rgba(36, 0, 255, 0) 100%)',
+    backdropFilter: 'blur(200px)',
+  }}
+>
+  <div 
+    className="w-full lg:w-1/2 lg:h-auto lg:text-left lg:ml-12 lg:mr-2 lg:px-10 text-center lg:text-left relative lg:relative lg:opacity-100 px-4"
+  >
+    <h3 className="text-indigo-800 mb-4 font-extrabold text-lg md:text-2xl font-quicksand tracking-widest text-left">
+      Somos una 
+    </h3>
+
+    <TypingTitle />
+
+    <p className="font-quicksand text-[#414F62] py-2 font-normal text-sm md:text-2xl leading-6 md:leading-9 tracking-widest text-left">
+      Potenciamos el crecimiento digital con <br/> 
+      soluciones que aceleran e impulsan el <br/> 
+      <span className="font-semibold">impacto empresarial</span>
+    </p>
+
+    <button 
+      className="bg-[#0A2FDA] text-white font-quicksand text-[14px] sm:text-[18px] font-semibold leading-[20px] sm:leading-[22.5px] text-center w-[250px] sm:w-[320px] h-[45px] sm:h-[61px] mt-4 sm:mt-10 px-4 py-2 sm:py-4 rounded-full mb-6 sm:mb-0"
+    >
+      ¿Cómo podemos ayudarte?
+    </button>
+  </div>
+
+  <div className="hidden lg:block lg:-mt-48 px-4 py-20 mx-auto lg:mr-14 w-1/2 h-auto">
+    <img src={celu} alt="img-hero"/>
+  </div>
+</section>
+
       <Slider/>
       <SectionServices/>
       <SectionNosotros/>
