@@ -41,12 +41,12 @@ export default function SectionNosotros() {
       <section className="bg-[#F2F2F7] pt-12 pb-8 mb-0 flex flex-col items-center" id="Nosotros">
   <div className="w-full px-6 sm:px-16">
     
-    <h3 className="font-quicksand-600 text-indigo-800 text-left font-semibold text-lg sm:text-xl py-2 md:text-[24px] md:text-left">
+    <h3 className="font-quicksand-600 text-[#0A2FDA] text-left font-semibold text-lg sm:text-xl py-4 md:text-[24px] md:text-left">
       Sobre nosotros
     </h3>
 
     
-    <h2 className="font-quicksand-600 text-left text-base sm:text-lg mb-4 md:text-[24px] md:text-left">
+    <h2 className="font-quicksand-600 text-left text-base sm:text-lg py-4 mb-4 md:text-[24px] md:text-left">
       En Wallock, somos un equipo de expertos en tecnología dedicado a crear soluciones digitales únicas que impulsan tu negocio.
     </h2>
 
@@ -60,9 +60,9 @@ export default function SectionNosotros() {
 
 
 <section className="bg-[#F2F2F7] pt-12 pb-8 mb-0 flex flex-col items-center">
-  <div className="container mx-auto max-w-[1440px] px-6">
+  <div className="container mx-auto max-w-[1440px] px-6 sm:px-12">
     <div className="w-full sm:pl-0">
-      <h2 className="font-quicksand-600 text-indigo-800 sm:px-12 text-left font-semibold text-lg sm:text-xl py-2 md:text-[24px] lg:text-[24px]">Nuestros valores</h2>
+      <h2 className="font-quicksand-600 text-[#0A2FDA] sm:px-4 text-left font-semibold text-lg sm:text-xl py-2 md:text-[24px] lg:text-[24px]">Nuestros valores</h2>
     </div>
 
     <div className="flex justify-center items-start">
@@ -72,7 +72,7 @@ export default function SectionNosotros() {
             key={service.name}
             className="bg-white font-quicksand text-center w-full h-auto p-6 md:p-8 lg:p-10 xl:p-12 rounded-lg shadow-lg border border-solid border-[#D5D4DC] opacity-100 hover:shadow-xl"
           >
-            <div className="flex items-center justify-center mb-4 text-indigo-800">
+            <div className="flex items-center justify-center mb-4 text-[#4361EE]">
               <div className="text-2xl mr-2">{service.icon}</div>
               <h1 className="text-lg font-semibold text-black">{service.name}</h1>
             </div>
