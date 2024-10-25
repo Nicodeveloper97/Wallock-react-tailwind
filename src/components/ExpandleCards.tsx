@@ -15,7 +15,7 @@ export default function ExpandableCards({ service }: ExpandableCardsProps) {
   return (
     <div className="space-y-4 my-4 sm:my-8 bg-gray-100 p-0 sm:p-4">
       <article
-        className={`bg-gray-100 w-full sm:w-full border-2 border-[#0A2FDA] rounded-md p-4 sm:p-6 ${
+        className={`w-full sm:w-full border-2 border-[#0A2FDA] rounded-md p-4 sm:p-6 ${
           isExpanded ? "py-6" : "py-2"
         } transition-all duration-500 ease-in-out`}
       >

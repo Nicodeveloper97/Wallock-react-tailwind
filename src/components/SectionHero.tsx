@@ -65,21 +65,7 @@ export default function SectionHero() {
     
     <ul 
       className={`sm:flex md:justify-center lg:flex lg:flex-row lg:mr-20 gap-6 items-center font-poppins text-md lg:text-base font-normal no-underline text-gray-900 ${menuOpen ? 'hidden' : 'hidden'} lg:block`}
-    >
-      <li>
-        <Link
-          to="Inicio"
-          spy={true}
-          smooth={true}
-          offset={-70}
-          duration={500}
-          className={`w-5 h-3 cursor-pointer text-black hover:underline hover:underline-offset-4 hover:decoration-[#0A2FDA] hover:text-gray-500 ${activeLink === '#Inicio' ? 'text-gray-500 underline decoration-[#0A2FDA] underline-offset-4'  : 'text-black'}`}
-          onClick={() => handleClick('#Inicio')}
-        >
-          Inicio
-        </Link>
-      </li>                
-                    
+    >                              
       <li>
         <Link 
           to="Servicios"
@@ -141,19 +127,6 @@ export default function SectionHero() {
           &times; 
         </button>
         <ul className="flex flex-col gap-6 items-start font-poppins text-md font-normal no-underline text-gray-900 mt-16 ml-4">
-          <li>
-            <Link
-              to="Inicio"
-              spy={true}
-              smooth={true}
-              offset={-70}
-              duration={500}
-              className={`w-full text-center p-3 hover:text-gray-500 hover:underline hover:underline-offset-4 hover:decoration-[#0A2FDA] cursor-pointer`}
-              onClick={() => handleClick('#Inicio')}
-            >
-              Inicio
-            </Link>
-          </li>
           <li>
             <Link 
               to="Servicios"

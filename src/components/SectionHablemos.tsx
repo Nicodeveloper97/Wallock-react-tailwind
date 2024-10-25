@@ -28,7 +28,7 @@ export default function SectionHablemos() {
   return (
     <>
       <h3 
-        className="w-full font-quicksand text-[#031FA2] font-semibold text-xl tracking-widest px-4 pt-6 pb-4 bg-[#F2F2F7]"
+        className="w-full font-quicksand text-[#031FA2] font-semibold text-xl tracking-widest pl-8 sm:pl-14 px-4 pt-6 pb-4 bg-[#F2F2F7]" id='Hablemos'
       >
         Contacto
       </h3>
