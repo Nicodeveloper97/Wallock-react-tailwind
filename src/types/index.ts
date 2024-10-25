@@ -8,3 +8,11 @@ export type ItemProps = {
   name: HTMLDivElement,
   icon: HTMLDivElement
 }
+
+export type SearchType = {
+  nombre: string,
+  apellido: string,
+  email: string,
+  mensaje: string,
+}
+

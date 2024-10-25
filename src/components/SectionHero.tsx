@@ -10,6 +10,7 @@ import SectionNosotros from "./SectionNosotros";
 import celu from "../assets/celus.png"
 import hamburicon from "../assets/hamburguer-icon.svg"
 import Slider from "./Slider"
+import Footer from "./Footer";
 
 export default function SectionHero() {
 
@@ -242,6 +243,7 @@ export default function SectionHero() {
       <SectionServices/>
       <SectionNosotros/>
       <SectionHablemos/>
+      <Footer />
     
     </>
   )
